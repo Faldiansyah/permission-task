@@ -17,13 +17,17 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonLoad.setOnClickListener {
             Glide.with(this)
-                .load("https://i.ibb.co/zJHYGBP/binarlogo.jpg")
+                .load("https://www.muslimobsession.com/wp-content/uploads/2020/06/IMG_20200619_083259.jpg")
                 .circleCrop()
                 .into(binding.imgLoad)
         }
 
         binding.buttonToAlarm.setOnClickListener {
             startActivity(Intent(this, AlarmActivity::class.java))
+        }
+
+        binding.buttonCamera.setOnClickListener {
+            startActivity(Intent(this, CameraActivity::class.java))
         }
 
     }
